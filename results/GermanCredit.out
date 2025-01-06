@@ -1,0 +1,86 @@
++++++++++++++ Solution (20/90/15) ++++++++++++++
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_car(V2)
+foreign_worker(V0,V1):- personal_status(V0,V2),attr_personal_status_female_div_dep_mar(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- checking_status(V0,V2),attr_foreign_worker_yes(V1),attr_checking_status_0_lt__eq_x_lt_200(V2)
+foreign_worker(V0,V1):- attr_employment__gt__eq_7(V2),employment(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_life_insurance(V2)
+
+Avg. Coverage (%): 30.50, Avg. Recall (%): 31.67, Avg. Precision (%): 97.62
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++ Solution (15/85/10) ++++++++++++++
+age_cat(V0,V1):- attr_job_high_qualif_self_emp_mgmt(V2),job(V0,V2),attr_age_cat_old(V1)
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_car(V2)
+foreign_worker(V0,V1):- personal_status(V0,V2),attr_personal_status_female_div_dep_mar(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- checking_status(V0,V2),attr_foreign_worker_yes(V1),attr_checking_status_0_lt__eq_x_lt_200(V2)
+foreign_worker(V0,V1):- attr_employment__gt__eq_7(V2),employment(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_life_insurance(V2)
+foreign_worker(V0,V1):- int_24(V2),duration(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- employment(V0,V2),attr_foreign_worker_yes(V1),attr_employment_4_lt__eq_x_lt_7(V2)
+foreign_worker(V0,V1):- attr_property_magnitude_no_known_property(V2),attr_foreign_worker_yes(V1),property_magnitude(V0,V2)
+
+Avg. Coverage (%): 24.73, Avg. Recall (%): 25.96, Avg. Precision (%): 97.54
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++ Solution (10/80/5) ++++++++++++++
+age_cat(V0,V1):- attr_job_high_qualif_self_emp_mgmt(V2),job(V0,V2),attr_age_cat_old(V1)
+age_cat(V0,V1):- housing(V0,V2),attr_age_cat_old(V1),attr_housing_for_free(V2)
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_car(V2)
+foreign_worker(V0,V1):- personal_status(V0,V2),attr_personal_status_female_div_dep_mar(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- checking_status(V0,V2),attr_foreign_worker_yes(V1),attr_checking_status_0_lt__eq_x_lt_200(V2)
+foreign_worker(V0,V1):- attr_employment__gt__eq_7(V2),employment(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_life_insurance(V2)
+foreign_worker(V0,V1):- int_24(V2),duration(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- employment(V0,V2),attr_foreign_worker_yes(V1),attr_employment_4_lt__eq_x_lt_7(V2)
+foreign_worker(V0,V1):- attr_property_magnitude_no_known_property(V2),attr_foreign_worker_yes(V1),property_magnitude(V0,V2)
+foreign_worker(V0,V1):- duration(V0,V2),int_18(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- purpose(V0,V2),attr_foreign_worker_yes(V1),attr_purpose_used_car(V2)
+
+Avg. Coverage (%): 21.45, Avg. Recall (%): 22.65, Avg. Precision (%): 97.53
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++ Solution (5/80/2.5) ++++++++++++++
+age_cat(V0,V1):- attr_job_high_qualif_self_emp_mgmt(V2),job(V0,V2),attr_age_cat_old(V1)
+age_cat(V0,V1):- housing(V0,V2),attr_age_cat_old(V1),attr_housing_for_free(V2)
+age_cat(V0,V1):- attr_personal_status_male_div_sep(V2),personal_status(V0,V2),attr_age_cat_old(V1)
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_car(V2)
+foreign_worker(V0,V1):- personal_status(V0,V2),attr_personal_status_female_div_dep_mar(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- checking_status(V0,V2),attr_foreign_worker_yes(V1),attr_checking_status_0_lt__eq_x_lt_200(V2)
+foreign_worker(V0,V1):- attr_employment__gt__eq_7(V2),employment(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),property_magnitude(V0,V2),attr_property_magnitude_life_insurance(V2)
+foreign_worker(V0,V1):- int_24(V2),duration(V0,V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- employment(V0,V2),attr_foreign_worker_yes(V1),attr_employment_4_lt__eq_x_lt_7(V2)
+foreign_worker(V0,V1):- attr_property_magnitude_no_known_property(V2),attr_foreign_worker_yes(V1),property_magnitude(V0,V2)
+foreign_worker(V0,V1):- duration(V0,V2),int_18(V2),attr_foreign_worker_yes(V1)
+foreign_worker(V0,V1):- purpose(V0,V2),attr_foreign_worker_yes(V1),attr_purpose_used_car(V2)
+foreign_worker(V0,V1):- attr_credit_history_delayed_previously(V2),attr_foreign_worker_yes(V1),credit_history(V0,V2)
+foreign_worker(V0,V1):- checking_status(V0,V2),attr_foreign_worker_yes(V1),attr_checking_status__gt__eq_200(V2)
+foreign_worker(V0,V1):- attr_foreign_worker_yes(V1),personal_status(V0,V2),attr_personal_status_male_div_sep(V2)
+
+Avg. Coverage (%): 17.84, Avg. Recall (%): 18.87, Avg. Precision (%): 97.38
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++ Max. Recall ++++++++++++++++++
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+Coverage (%): 46.60, Recall (%): 48.39, Precision (%): 97.90
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++ Max. Precision ++++++++++++++++
+foreign_worker(V0,V1):- attr_credit_history_delayed_previously(V2),attr_foreign_worker_yes(V1),credit_history(V0,V2)
+Coverage (%): 8.80, Recall (%): 9.14, Precision (%): 100.00
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++ Max. Coverage +++++++++++++++++
+foreign_worker(V0,V1):- installment_commitment(V0,V2),int_4(V2),attr_foreign_worker_yes(V1)
+Coverage (%): 46.60, Recall (%): 48.39, Precision (%): 97.90
+++++++++++++++++++++++++++++++++++++++++++++++++

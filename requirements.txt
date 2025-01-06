@@ -1,0 +1,6 @@
+clingo~=5.6.2
+bitarray~=2.9.2
+python-sat~=1.8.dev12
+janus_swi~=1.5.1
+git+https://github.com/logic-and-learning-lab/Popper@1903c441082a344449988c6b52a46b7dde3fdc8a
+

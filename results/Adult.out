@@ -1,0 +1,57 @@
++++++++++++++ Solution (20/90/15) ++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+
+Avg. Coverage (%): 41.27, Avg. Recall (%): 61.14, Avg. Precision (%): 99.99
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++ Solution (15/85/10) ++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+sex(V0,V1):- attr_occupation_craft_repair(V2),occupation(V0,V2),attr_sex_male(V1)
+race(V0,V1):- attr_education_bachelors(V2),education(V0,V2),native_country(V0,V3),attr_race_white(V1),attr_native_country_united_states(V3)
+
+Avg. Coverage (%): 22.67, Avg. Recall (%): 32.08, Avg. Precision (%): 95.48
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++ Solution (10/80/5) ++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+sex(V0,V1):- attr_occupation_craft_repair(V2),occupation(V0,V2),attr_sex_male(V1)
+race(V0,V1):- attr_education_bachelors(V2),education(V0,V2),native_country(V0,V3),attr_race_white(V1),attr_native_country_united_states(V3)
+race(V0,V1):- workclass(V0,V3),attr_race_white(V1),attr_marital_status_divorced(V2),attr_workclass_private(V3),marital_status(V0,V2)
+
+Avg. Coverage (%): 19.25, Avg. Recall (%): 26.67, Avg. Precision (%): 93.38
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++ Solution (5/80/2.5) ++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+sex(V0,V1):- attr_occupation_craft_repair(V2),occupation(V0,V2),attr_sex_male(V1)
+sex(V0,V1):- occupation(V0,V2),attr_occupation_transport_moving(V2),attr_sex_male(V1)
+sex(V0,V1):- attr_sex_female(V1),relationship(V0,V2),attr_relationship_wife(V2)
+race(V0,V1):- attr_education_bachelors(V2),education(V0,V2),native_country(V0,V3),attr_race_white(V1),attr_native_country_united_states(V3)
+race(V0,V1):- workclass(V0,V3),attr_race_white(V1),attr_marital_status_divorced(V2),attr_workclass_private(V3),marital_status(V0,V2)
+race(V0,V1):- relationship(V0,V3),attr_relationship_not_in_family(V3),education(V0,V2),attr_race_white(V1),attr_education_hs_grad(V2)
+race(V0,V1):- hours_per_week(V0,V2),attr_race_white(V1),int_45(V2)
+race(V0,V1):- relationship(V0,V3),education(V0,V2),attr_education_some_college(V2),attr_relationship_not_in_family(V3),attr_race_white(V1)
+
+Avg. Coverage (%): 11.50, Avg. Recall (%): 16.44, Avg. Precision (%): 92.67
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++ Max. Recall ++++++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+Coverage (%): 41.27, Recall (%): 61.14, Precision (%): 99.99
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++ Max. Precision ++++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+Coverage (%): 41.27, Recall (%): 61.14, Precision (%): 99.99
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++ Max. Coverage +++++++++++++++++
+sex(V0,V1):- attr_relationship_husband(V2),relationship(V0,V2),attr_sex_male(V1)
+Coverage (%): 41.27, Recall (%): 61.14, Precision (%): 99.99
+++++++++++++++++++++++++++++++++++++++++++++++++
