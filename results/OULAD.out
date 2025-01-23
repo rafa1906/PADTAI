@@ -11,25 +11,26 @@
 
 
 +++++++++++++ Solution (5/80/2.5) ++++++++++++++
-marriage(V0,V1):- attr_age_27(V2),attr_marriage_2(V1),age(V0,V2)
+gender(V0,V1):- attr_code_presentation_2013j(V3),attr_gender_m(V1),code_module(V0,V2),attr_code_module_eee(V2),code_presentation(V0,V3)
+gender(V0,V1):- code_module(V0,V2),attr_highest_education_lower_than_a_level(V3),attr_gender_m(V1),highest_education(V0,V3),attr_code_module_eee(V2)
 
-Avg. Coverage (%): 4.07, Avg. Recall (%): 7.65, Avg. Precision (%): 82.67
+Avg. Coverage (%): 2.88, Avg. Recall (%): 5.30, Avg. Precision (%): 90.45
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ++++++++++++++++ Max. Recall ++++++++++++++++++
-marriage(V0,V1):- attr_age_27(V2),attr_marriage_2(V1),age(V0,V2)
-Coverage (%): 4.07, Recall (%): 7.65, Precision (%): 82.67
+gender(V0,V1):- attr_code_presentation_2013j(V2),code_presentation(V0,V2),code_module(V0,V3),attr_gender_f(V1),attr_code_module_ggg(V3)
+Coverage (%): 2.46, Recall (%): 5.37, Precision (%): 81.56
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 +++++++++++++++ Max. Precision ++++++++++++++++
-marriage(V0,V1):- pay_amt4(V0,V2),attr_pay_amt4_936(V2),attr_marriage_2(V1)
-Coverage (%): 0.02, Recall (%): 0.04, Precision (%): 100.00
+gender(V0,V1):- region(V0,V3),attr_gender_f(V1),code_module(V0,V2),attr_code_module_bbb(V2),attr_region_south_west_region(V3)
+Coverage (%): 1.63, Recall (%): 3.56, Precision (%): 91.28
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 +++++++++++++++ Max. Coverage +++++++++++++++++
-marriage(V0,V1):- attr_age_27(V2),attr_marriage_2(V1),age(V0,V2)
-Coverage (%): 4.07, Recall (%): 7.65, Precision (%): 82.67
+gender(V0,V1):- attr_code_presentation_2013j(V3),attr_gender_m(V1),code_module(V0,V2),attr_code_module_eee(V2),code_presentation(V0,V3)
+Coverage (%): 2.87, Recall (%): 5.29, Precision (%): 90.30
 ++++++++++++++++++++++++++++++++++++++++++++++++
