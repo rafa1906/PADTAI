@@ -32,5 +32,5 @@ Coverage (%): 1.63, Recall (%): 3.56, Precision (%): 91.28
 
 +++++++++++++++ Max. Coverage +++++++++++++++++
 gender(V0,V1):- attr_code_presentation_2013j(V3),attr_gender_m(V1),code_module(V0,V2),attr_code_module_eee(V2),code_presentation(V0,V3)
-Coverage (%): 2.87, Recall (%): 5.29, Precision (%): 90.30
+Coverage (%): 2.88, Recall (%): 5.31, Precision (%): 90.60
 ++++++++++++++++++++++++++++++++++++++++++++++++
