@@ -3,40 +3,53 @@
 
 
 +++++++++++++ Solution (15/85/10) ++++++++++++++
+sex(V0,V1):- attr_detailed_household_summary_in_household_spouse_of_householder(V2),attr_sex_female(V1),detailed_household_summary_in_household(V0,V2)
+
+Avg. Coverage (%): 18.00, Avg. Recall (%): 37.58, Avg. Precision (%): 86.55
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ++++++++++++++ Solution (10/80/5) ++++++++++++++
-race(V0,V1):- attr_race_white(V1),int_1(V2),num_persons_worked_for_employer(V0,V2)
+sex(V0,V1):- attr_sex_female(V1),attr_major_occupation_code_adm_support_including_clerical(V2),major_occupation_code(V0,V2)
+sex(V0,V1):- attr_detailed_household_summary_in_household_spouse_of_householder(V2),attr_sex_female(V1),detailed_household_summary_in_household(V0,V2)
 
-Avg. Coverage (%): 10.49, Avg. Recall (%): 12.49, Avg. Precision (%): 90.23
+Avg. Coverage (%): 11.98, Avg. Recall (%): 25.02, Avg. Precision (%): 83.31
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 +++++++++++++ Solution (5/80/2.5) ++++++++++++++
-race(V0,V1):- attr_race_white(V1),int_1(V2),num_persons_worked_for_employer(V0,V2)
-race(V0,V1):- int_4(V2),attr_race_white(V1),num_persons_worked_for_employer(V0,V2)
-sex(V0,V1):- major_occupation_code(V0,V2),attr_sex_male(V1),attr_major_occupation_code_precision_production_craft__and__repair(V2)
+race(V0,V1):- attr_major_occupation_code_executive_admin_and_managerial(V2),attr_race_white(V1),major_occupation_code(V0,V2)
+race(V0,V1):- attr_marital_stat_widowed(V2),marital_stat(V0,V2),attr_race_white(V1)
+race(V0,V1):- attr_major_occupation_code_adm_support_including_clerical(V2),attr_race_white(V1),major_occupation_code(V0,V2)
+race(V0,V1):- attr_major_occupation_code_precision_production_craft__and__repair(V2),attr_race_white(V1),major_occupation_code(V0,V2)
+race(V0,V1):- live_in_this_house_1_year_ago(V0,V2),attr_live_in_this_house_1_year_ago_no(V2),attr_race_white(V1)
+race(V0,V1):- int_2(V2),attr_race_white(V1),own_business_or_self_employed(V0,V2)
+race(V0,V1):- marital_stat(V0,V2),attr_marital_stat_divorced(V2),attr_race_white(V1)
+race(V0,V1):- int_2(V2),num_persons_worked_for_employer(V0,V2),attr_race_white(V1)
+race(V0,V1):- int_4(V2),num_persons_worked_for_employer(V0,V2),attr_race_white(V1)
+race(V0,V1):- attr_major_occupation_code_sales(V2),attr_race_white(V1),major_occupation_code(V0,V2)
 sex(V0,V1):- attr_marital_stat_widowed(V2),attr_sex_female(V1),marital_stat(V0,V2)
-sex(V0,V1):- major_industry_code(V0,V2),attr_major_industry_code_construction(V2),attr_sex_male(V1)
+sex(V0,V1):- attr_sex_female(V1),attr_major_occupation_code_adm_support_including_clerical(V2),major_occupation_code(V0,V2)
+sex(V0,V1):- attr_detailed_household_summary_in_household_spouse_of_householder(V2),attr_sex_female(V1),detailed_household_summary_in_household(V0,V2)
+sex(V0,V1):- major_industry_code(V0,V2),attr_sex_male(V1),attr_major_industry_code_construction(V2)
 
-Avg. Coverage (%): 5.71, Avg. Recall (%): 8.92, Avg. Precision (%): 88.22
+Avg. Coverage (%): 6.21, Avg. Recall (%): 9.38, Avg. Precision (%): 86.44
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ++++++++++++++++ Max. Recall ++++++++++++++++++
-race(V0,V1):- attr_country_of_birth_mother_philippines(V2),country_of_birth_mother(V0,V2),attr_race_asian_or_pacific_islander(V1)
-Coverage (%): 0.57, Recall (%): 21.15, Precision (%): 89.89
+sex(V0,V1):- attr_detailed_household_summary_in_household_spouse_of_householder(V2),attr_sex_female(V1),detailed_household_summary_in_household(V0,V2)
+Coverage (%): 18.00, Recall (%): 37.58, Precision (%): 86.55
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 +++++++++++++++ Max. Precision ++++++++++++++++
-race(V0,V1):- int_1461_11(V2),instance_weight(V0,V2),attr_sex_male(V1)
-Coverage (%): 0.00, Recall (%): 0.00, Precision (%): 100.00
+race(V0,V1):- attr_country_of_birth_father_italy(V2),country_of_birth_father(V0,V2),attr_race_white(V1)
+Coverage (%): 1.13, Recall (%): 1.35, Precision (%): 99.65
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 +++++++++++++++ Max. Coverage +++++++++++++++++
-race(V0,V1):- attr_race_white(V1),int_1(V2),num_persons_worked_for_employer(V0,V2)
-Coverage (%): 10.49, Recall (%): 12.49, Precision (%): 90.23
+sex(V0,V1):- attr_detailed_household_summary_in_household_spouse_of_householder(V2),attr_sex_female(V1),detailed_household_summary_in_household(V0,V2)
+Coverage (%): 18.00, Recall (%): 37.58, Precision (%): 86.55
 ++++++++++++++++++++++++++++++++++++++++++++++++
